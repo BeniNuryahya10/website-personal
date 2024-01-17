@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thito & Mutia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- simplycountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Boostrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Kepada Bapa/Ibu/Saudara/,</h4>
+        <h1>Tito Abdullah & Mutiara Arimbi</h1>
+        <p>Akan melangsungkan repsepsi pernikahan dalam :</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onclick= 'enableScroll()'>Lihat Undangan</a>
+      </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Wedding</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Wedding</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsv">RSV</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>
+              Diselenggarakan pada tanggal 17 April 2024, <br />Perumahan Bella Recidence, Kecamatan Purwadadi, Kabupaten Subang jawa Barat.
+            </h3>
+            <p>
+              Oleh karena itu, dengan segala hormat, kami bermaksud untuk
+              mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan
+              kami
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row couple">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-8 text-end">
+              <h3>Tito Abdullah</h3>
+              <p>
+                Lahir Pada Tanggal 22 Oktober 2001
+              </p>
+              <p>
+                Putra Dari Bpk. Saha <br />
+                dan Siapa<br />
+              </p>
+            </div>
+            <div class="col-4">
+              <img
+                src="img/Toppet.jpeg"
+                alt="Tito Abdullah "
+                height="78%"
+                class="img-responsive rounded-circle"
+              />
+            </div>
+          </div>
+        </div>
+
+        <span class="heart"><i class="bi bi-arrow-through-heart"></i></span>
+
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-4">
+              <img
+                src="img/muti.jpeg"
+                alt="Mutiara Arimbi "
+                width="40%"
+                height="50%"
+                class="img-responsive rounded-circle"
+              />
+            </div>
+            <div class="col-8">
+              <h3>Mutiara Arimbi</h3>
+              <p>
+               Lahir Pada Tanggal 8 Oktober 2002
+              </p>
+              <p>
+                Putri Dari Bpk. Mertua <br />
+                dan Ibu Mertua<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="Alamat">
+              Alamat : Perumahan Bella Recidence. <br />
+              Kecamatan Purwadadi, Kabupaten Subang
+            </p>
+            <a
+              href="https://maps.app.goo.gl/PnqvHbLqr36wqTvB6"
+              target="_blank"
+              class="btn btn-light btn-sm my-3"
+              >Klik Buka Peta</a
+            >
+
+            <br />
+            <p class="description">
+              Untuk lokasi acara pernikahan ini sudah kami cantumkan alamat atau link diatas
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad Nikah</div>
+            <div class="row justify-content-center" >
+              <div class="col-6">
+                <i class="bi bi-clock d-block"></i>
+                <span>08.00 - 10.00</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar3 d-block"></i>
+                <span>Minggu 17 April 2024</span>
+              
+              </div>
+            </div>
+          <div class="card-footer ">Sungguh kami  mengharapkan kehadiran saudara-saudari untuk berkenan hadir dan mendoakan agar acara kami berjalan dengan lancar .</div>    
+          </div>
+            </div>
+          <div class="col-md-6 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Resepsi</div>
+            <div class="row justify-content-center" >
+              <div class="col-md-6">
+                <i class="bi bi-clock d-block"></i>
+                <span>11.00 - Selesai</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar3 d-block"></i>
+                <span>Minggu 17 April 2024</span>
+              
+              </div>
+            </div>
+          <div class="card-footer ">Demikian dengan surat undangan ini kami buat, mohon maaf jika ada salah kata atau kekurangan dalam undangan ini kami ucapkan terimakasih. Semoga acara kami berjalan dengan lancar</div>    
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section id="story" class="story">
+  <div class="container">
+    <div class="row justify-content-center">
+  <div class="col-md-8 col-10 text-center">
+    
+<span>Bagaimana Cerita Kami</span>
+<h2>History Kami</h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, cumque. Repudiandae eaque iste eveniet dolor.
+
+</p>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <ul class="timeline">
+<li>
+  <div class="timeline-image" style="background-image: url(img/Topet1.jpeg);">
+    </div>
+<div class="timeline-panel">
+  <div class="timeline-heading">
+    <h3>Pertama Bertemu</h3>
+    <span> 2019</span>    
+  </div>
+  <div class="timeline-body">
+    <p>Awal mula bertemu kami di SMA Negeri 1 Purwadadi, pada saat itu saya ( Tito ) memberanikan diri untuk mengenal lebih dekat dengan mutiara.
+
+    </p>
+  </div>
+
+</li>
+<li class="timeline-inverted">
+  <div class="timeline-image" style="background-image: url(img/muti.jpeg);">
+    </div>
+<div class="timeline-panel">
+  <div class="timeline-heading">
+    <h3>Menjalin Hubungan</h3>
+    <span>2019</span>    
+  </div>
+  <div class="timeline-body">
+    <p>Setelah berkomunikasi beberapa bulan dan menemukan kecocokan akhirnya kami memutusakan untuk berkomitmen untuk saling menjaga dan memulai hubungan ke jenjang yang lebih serius.
+    </p>
+  </div>
+</div>
+</li>
+<li>
+  <div class="timeline-image" style="background-image: url(img/1.jpeg);">
+    </div>
+<div class="timeline-panel">
+  <div class="timeline-heading">
+    <h3>Mulai Serius</h3>
+    <span>2024</span>    
+  </div>
+  <div class="timeline-body">
+    <p>Awal Tahun ini menjadi awal untuk kami membawa hubungan ini ke jenjang yang lebih serius di depan seluruh keluarga. Saya ( Tito ) dan dia ( Mutiara ) berkomitmen untuk menyempurnakan serta menjalankan ibadah terpanjang dan menua bersama
+    </p>
+  </div>
+</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <div class="container">
+     <div class="row justify-content-center">
+  <div class="col-md-8 col-10 text-center">
+    <br>
+    <br>
+<span>Memori Dari Kisah Kami</span>
+<h2>Gallery Kami</h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, cumque. Repudiandae eaque iste eveniet dolor.
+
+</p>
+  </div>
+  </div>
+
+  <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+<div class="col mt-3">
+  <a href="img/gallery/thumbnail/2.jpeg" data-toggle="lightbox" data-caption="Tito Abdullah" data-gallery="mygallery">
+    <img src="img/gallery/thumbnail/2.jpeg" alt="Tito Abdullah" class="img-fluid w-100 h-100 rounded">
+  </a>
+</div>
+<div class="col mt-3">
+  <a href="img/gallery/thumbnail/3.jpeg" data-toggle="lightbox" data-caption="Tito Abdullah1" data-gallery="mygallery">
+    <img src="img/gallery/thumbnail/3.jpeg" alt="Tito Abdullah1" width="100%"
+                height="100%"  class="img-fluid w-100 h-100 rounded">
+                </a>
+                </div>
+<div class="col mt-3">
+  <a href="img/gallery/thumbnail/4.jpeg" data-toggle="lightbox" data-caption="Tito Abdullah2" data-gallery="mygallery">
+    <img src="img/gallery/thumbnail/4.jpeg" alt="Tito Abdullah2" class="img-fluid w-100 h-100 rounded">
+  </a>
+</div>
+<div class="col mt-3">
+  <a href="img/gallery/thumbnail/Toppet.jpeg" data-toggle="lightbox" data-caption="Tito Abdullah3" data-gallery="mygallery">
+    <img src="img/gallery/thumbnail/Toppet.jpeg" alt="Tito Abdullah4" width="100%"
+                height="100%" class="img-fluid w-100 h-100 rounded">
+  </a>
+</div>
+<div class="col mt-3">
+  <a href="img/gallery/thumbnail/6.jpeg" data-toggle="lightbox" data-caption="Tito Abdullah4" data-gallery="mygallery">
+    <img src="img/gallery/thumbnail/6.jpeg" alt="Tito Abdullah4"  class="img-fluid w-100 h-100 rounded">
+  </a>
+</div>
+<div class="col mt-3">
+  <a href="img/gallery/thumbnail/7.jpeg" data-toggle="lightbox" data-caption="Tito Abdullah5" data-gallery="mygallery">
+    <img src="img/gallery/thumbnail/7.jpeg" alt="Tito Abdullah5" class="img-fluid w-100 h-100 rounded">
+  </a>
+</div>
+
+  </div>
+    
+
+</section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 04, // required
+        day: 17, // required
+        hours: 8, // Default is 0 [0-23] integer
+
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+      
+    </script>
+
+    <script>
+      
+      const stickyTop = document.querySelector('.sticky-top');
+      const offcanvas = document.querySelector('.offcanvas');
+
+
+      offcanvas.addEventListener('show.bs.offcanvas',function(){
+        stickyTop.style.overflow='visible'
+      });
+
+
+      offcanvas.addEventListener('hidden.bs.offcanvas',function(){
+        stickyTop.style.overflow='hidden'
+});
+    </script>
+
+    <script>
+      function disableScroll(){
+         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+
+         window.onscroll = function(){
+          window.scrollTo(scrollTop, scrollLeft);
+         }
+
+         const rootElement = document.querySelector(':root');
+         rootElement.style.scrollBehavior = 'auto';
+      }
+      
+
+      function enableScroll(){
+   window.onscroll = function (){ }
+       rootElement.style.scrollBehavior = 'smooth';
+       localStorage.setItem('opened', 'true');
+         
+
+      }
+        if (!localStorage.getItem('opened')){
+                disableScroll();
+        }
+
+
+      </script>
+    </script>
+  </body>
+</html>
