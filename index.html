@@ -34,7 +34,7 @@
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <h4>Kepada Bapa/Ibu/Saudara/,</h4>
+        <h4>Kepada  <span>Bapa/Ibu/Saudara/,</span></h4>
         <h1>Tito Abdullah & Mutiara Arimbi</h1>
         <p>Akan melangsungkan repsepsi pernikahan dalam :</p>
         <div class="simply-countdown"></div>
@@ -76,7 +76,7 @@
               <a class="nav-link" href="#info">Info</a>
               <a class="nav-link" href="#story">Story</a>
               <a class="nav-link" href="#gallery">Gallery</a>
-              <a class="nav-link" href="#rsv">RSV</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
               <a class="nav-link" href="#gifts">Gifts</a>
             </div>
           </div>
@@ -160,6 +160,8 @@
               Alamat : Perumahan Bella Recidence. <br />
               Kecamatan Purwadadi, Kabupaten Subang
             </p>
+<!-- ini buat peta widht 100% height nya 200% -->
+
             <a
               href="https://maps.app.goo.gl/PnqvHbLqr36wqTvB6"
               target="_blank"
@@ -280,8 +282,7 @@
   <div class="container">
      <div class="row justify-content-center">
   <div class="col-md-8 col-10 text-center">
-    <br>
-    <br>
+   
 <span>Memori Dari Kisah Kami</span>
 <h2>Gallery Kami</h2>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, cumque. Repudiandae eaque iste eveniet dolor.
@@ -332,9 +333,6 @@
   <div class="container">
      <div class="row justify-content-center">
   <div class="col-md-8 col-10 text-center">
-    <br>
-    <br>
-
 <h2>Konfirmasi Kehadiran</h2>
 <p>Isi form dibawah ini untuk Konfirmasi Kehadiran
 
@@ -351,7 +349,7 @@
   <div class="col-12">
     <div class="mb-3">
   <label for="nama" class="form-label">Nama</label>
-  <input type="text" class="form-control" id="nama"  nama =" name"placeholder="nama@xample.com">
+  <input type="text" class="form-control" id="nama"  nama =" name">
         </div>
       </div>
       <div class="col-12">
@@ -374,6 +372,32 @@
         <button class="btn btn-primary"> Kirim</button> 
       </div>
 </form>
+<!-- buat komentar selamat -->
+<div class="row justify-content-center mt-5">
+  <div class="col-md-6">
+    <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function( ) { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://wedding2-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//wedding2-1.disqus.com/count.js" async></script>
+</div>
+  </div>
+</div>
 </div>
 </section>
 </section>
@@ -506,6 +530,7 @@
 
          const rootElement = document.querySelector(':root');
 const audioiconwrapper =document.querySelector('.audio-icon-wrapper');
+const audioicon = document.querySelector('.audio-icon-wrapper i');
  const song = document.querySelector('#song');
 let isPlaying = false;
 
@@ -542,10 +567,14 @@ let isPlaying = false;
       if  ( isPlaying ) {   
 
       song.pause( );
+      audioicon.classList.remove( 'bi-disc' );
+      audioicon.classList.add( 'bi-pause-circle' );
 
       } else {
 
            song.play( );
+           audioicon.classList.add( 'bi-disc' );
+      audioicon.classList.remove( 'bi-pause-circle' );
       }
 isPlaying = !isPlaying;
 
@@ -576,5 +605,16 @@ disableScroll();
   });
 });
     </script> -->
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get( 'n' ) || ' ';
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+
+      const namaContainer = document.querySelector('. hero h4 span');
+      namaContainer.innerText = '${pronoun} ${nama},'.replace(/ ,$/, ',');
+
+document.querySelector(' #nama').value= nama;
+    </script>
   </body>
 </html>
