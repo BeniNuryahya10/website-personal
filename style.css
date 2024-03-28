@@ -74,7 +74,7 @@ body {
 }
 
 .home {
-  background-image: url(img/bg.png);
+  background-image: url(img/bg-2.png);
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
@@ -132,8 +132,8 @@ body {
   color: var(--pink);
 }
 .info {
-  background-color: var(--bg);
-  color: white;
+  background-image: url(img/bg-2.png);
+  color: rgb(0, 0, 0);
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
@@ -146,8 +146,8 @@ body {
 }
 
 .info .card {
-  background-color: rgb(255, 255, 255, 0.2) !important;
-  color: white !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: rgb(7, 7, 7) !important;
   border: 1px solid #999;
 }
 
@@ -284,11 +284,11 @@ body {
 }
 
 .gallery {
-  background-color: #ccc;
+  background-image: url(img/bg-2.png);
 }
 
 .rsvp {
-  background-color: var(--bg);
+  background-image: url(img/bg-2.png);
 }
 
 .rsvp h2 {
@@ -296,22 +296,25 @@ body {
 }
 
 .rsvp p {
-  color: #fff;
+  color: #000000;
 }
 
 .rsvp form label {
-  color: #fff;
+  color: #000000;
 }
 
 .rsvp button {
   background-color: var(--pink);
-  color: #fff;
+  color: #000000;
   border: 1px solid var(--pink);
 }
 .rsvp button:hover {
   background-color: #fff;
   color: #e25396;
   border: 1px solid #fff;
+}
+.gifts {
+  background-image: url(img/bg-2.png);
 }
 
 footer {
