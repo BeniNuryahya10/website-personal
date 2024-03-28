@@ -161,20 +161,29 @@
               Alamat : Dusun Blok Pilar. <br />
               Kecamatan Purwadadi, Kabupaten Subang
             </p>
-<!-- ini buat peta widht 100% height nya 200% -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7385221682043!2d107.60448737499648!3d-6.921829493077818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e89dbe0ec231%3A0x177412aac90cd065!2sAlun-alun%20Bandung!5e0!3m2!1sid!2sid!4v1710654047575!5m2!1sid!2sid"
+              <iframe
+              src="https://maps.app.goo.gl/nh7Vhx9cG1F1s3Xn9"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
 
-
-   <a href="https://maps.app.goo.gl/KyKvmshaLBNxEXe46"
+            <a
+              href="https://goo.gl/maps/R9seweCadg9MNyox5"
               target="_blank"
               class="btn btn-light btn-sm my-3"
-              >Klik Buka Peta</a
+              >Klik untuk membuka peta</a
             >
-
             <p class="description">
               Untuk lokasi acara pernikahan ini sudah kami cantumkan alamat atau link diatas
             </p>
           </div>
         </div>
+
         <div class="row justify-content-center mt-4">
           <div class="col-md-5 col-10">
             <div class="card text-center text-bg-light mb-5">
@@ -332,38 +341,48 @@
   </div>
   </div>
 
-<form class="row row-cols-md-auto g-3 align-items-center justify-content-center">
-  <!-- Buat google driver -->
-  
-  
+ <form
+  class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+  method="POST"
+action= "https://script.google.com/macros/s/AKfycbwg95UaAEhSFPPEKp85e5iCaC1aGgrHcpTksbZbrXn61iWx3OJZQvkd5PNKMH8LHyA7mg/exec"
+id="my-form"> 
+             <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input
+                type="number"
+                class="form-control"
+                id="jumlah"
+                name="jumlah"
+                min="1"
+                max="5"
+                length="1"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 35px">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
 
-  <!--  -->
-  <div class="col-12">
-    <div class="mb-3">
-  <label for="nama" class="form-label">Nama</label>
-  <input type="text" class="form-control" id="nama"  nama =" name">
-        </div>
-      </div>
-      <div class="col-12">
-    <div class="mb-3">
-  <label for="jumlah" class="form-label">Jumlah</label>
-  <input type="number" class="form-control" id="jalan"  nama =" jumlah" min="1" max="5" length="1" value="1">
-        </div>
-      </div>
-      <div class="col-12">
-    <div class="mb-3">
-  <label for="status" class="form-label">Konfirmasi</label>
- <select name="status" id="status" class="form-select">
-  <option selected >pilih salah satu</option>
-  <option value="hadir">hadir</option>
-  <option value="tidak hadir">tidak hadir</option>
- </select>
-        </div>
-      </div>
-      <div class ="col-12 "style = "margin-top: 35px;">
-        <button class="btn btn-primary"> Kirim</button> 
-      </div>
-</form>
+        
 <!-- buat komentar selamat -->
   <div class="row justify-content-center mt-5">
           <div class="col-md-6">
@@ -378,25 +397,20 @@
                 this.page.identifier = "https://github.com/BeniNuryahya10/website-personal.git/_IDENTIFIER with your page's unique identifier variable
               };
               
-    (function () {
-                // DON'T EDIT BELOW THIS LINE
-                var d = document,
-                  s = d.createElement("script");
-                s.src = "https://website-personal-1.disqus.com/embed.js";
-                s.setAttribute("data-timestamp", +new Date());
-                (d.head || d.body).appendChild(s);
-              })();
-            </script>
-            <noscript
-              >Please enable JavaScript to view the
-              <a href="https://disqus.com/?ref_noscript"
-                >comments powered by Disqus.</a
-              ></noscript
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+     (function( ) { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.page.url = 'https://github.com/BeniNuryahya10/website-personal.git/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-url" url="//https://beninuryahya10.github.io/website-personal/count.js" async></script>
+</div>
+  </div>
+</div>
+</div>
+</section>
 </section>
 
 <section id="gifts" class="gifts">
@@ -469,7 +483,7 @@
 
 <div id="audio-container">
   <audio id="song" autoplay loop>
-    <source src="audio/Westlife Beautiful In White.mp3" type="audio/mp3">
+    <source src="audio/Cinta-Bertasbih.mp3" type="audio/mp3">
   </audio>
 
   <div class="audio-icon-wrapper" style="display: none;">
@@ -585,23 +599,22 @@ disableScroll();
       </script>
     </script>
    <!--  tambahkan js buat google driver -->
-   <!-- <script>
-      window.addEventListener("load", function() {
-  const form = document.getElementById('my-form');
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const action = e.target.action;
-    fetch(action, {
-      method: 'POST',
-      body: data,
-    })
-    .then(() => {
-      alert("Konfirmasi kehadiran berhasil terkirim!");
-    })
-  });
-});
-    </script> -->
+  <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Konfirmasi kehadiran berhasil terkirim!");
+          });
+        });
+      });
+    </script>
 
     <script>
       const urlParams = new URLSearchParams(window.location.search);
